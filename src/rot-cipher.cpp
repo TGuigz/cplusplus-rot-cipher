@@ -10,23 +10,6 @@
 
 using namespace std;
 
-// cctype
-// Testing Characters
-// isalpha(c) isalnum(c) isdigit(c) islower(c) isprint(c) ispunct(c) isupper(c) isspace(c)
-
-// Conversion Functions
-// toupper(c) tolower(c)
-
-// cstring
-// strcpy(str, "foobar"):str = "foobar" | strcat(str, "foobar"):str + foobar | strlen(str):int | strcmp(str, "foobar"):true or false
-
-// string
-// string s1:empty | s2{"foobar"}:foobar | s3{s2}:foobar | s4{"foobar", 3}: foo | s5{s3, 0, 2}:fo | s6(3, 'X'):XXX
-// can use [] and at() to access characters in a string
-// substr(start_index, length) | length() | getline(input_string, stored_string,'x') get line until \n and discard 'x' characters
-// erase(start_index, length) | size_t postion = s1.find(word): get position of substring if in string | s1.swap(s2): swaps s1 with s2 goo for sorting
-// Looping: for(size_t i{}; i < s1.length(); ++i) | for(char c: s1)
-
 // Substitution Cipher Program
 class Rot_Cipher {
 public:
@@ -160,8 +143,6 @@ public:
 			string cipher = encrypt(i, user_text);
 			int rot = getrot(cipher, 2);
 			cout << "Cipher Text: " << cipher << " ROT" << rot << endl;
-			//string plain = decrypt(rot, cipher);
-			//cout << "Plain Text:  " << plain << "\n" << endl;
 		}
 	}
 };
