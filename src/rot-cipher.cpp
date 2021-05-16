@@ -135,7 +135,7 @@ public:
 		map<int, int>::iterator best = max_element(counters.begin(), counters.end(), [](const pair<int, int>& a, const pair<int, int>& b)->bool { return a.second < b.second; });
 		return best->first;
 	}
-	int main() {
+	int console_test() {
 		string user_text{};
 		cout << "Enter Your Text: ";
 		getline(cin, user_text);
@@ -144,5 +144,6 @@ public:
 			int rot = detect(cipher, 2);
 			cout << "Cipher Text: " << cipher << " ROT" << rot << endl;
 		}
+		return 0;
 	}
 };
