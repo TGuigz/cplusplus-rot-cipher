@@ -73,7 +73,7 @@ public:
 		}
 		return plain_text;
 	}
-	int getrot(string cipher_text, int mode = 0) {
+	int detect(string cipher_text, int mode = 0) {
 		vector<string> temp_words{};
 		vector<vector<string>>str_vector{};
 		vector<string> temp_str;
@@ -141,7 +141,7 @@ public:
 		getline(cin, user_text);
 		for (int i{ 1 };i < 26;++i) {
 			string cipher = encrypt(i, user_text);
-			int rot = getrot(cipher, 2);
+			int rot = detect(cipher, 2);
 			cout << "Cipher Text: " << cipher << " ROT" << rot << endl;
 		}
 	}
